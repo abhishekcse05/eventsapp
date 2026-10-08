@@ -10,5 +10,8 @@ WORKDIR /app
 # Install dependencies.
 RUN npm install
 
+# The website listens on port 8080.
+EXPOSE 8080
+
 # Start the Express app
 CMD ["node", "server.js"]
